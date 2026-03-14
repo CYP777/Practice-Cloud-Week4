@@ -7,6 +7,6 @@ spec:
     app: jenkins # ต้องตรงกับ label ใน Deployment
   ports:
     - protocol: TCP
-      port: 8000         # Port ของ Service
+      port: 8080         # Port ของ Service
       targetPort: 8000   # Port ของ Pod ที่ต้องการส่งไปหา
   type: ClusterIP      # ใช้เรียกกันเองภายใน Cluster

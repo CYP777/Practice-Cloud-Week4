@@ -4,7 +4,7 @@ metadata:
   name: jenkins-ingress
   annotations:
     kubernetes.io/ingress.class: "jenkins" # ระบุว่าใช้ Ingress Controller ตัวไหน
-    #spec.ingressClassName: "jenkins"
+    #spec.ingressClassName: "nginx"
 spec:
   rules:
   - host: my-jenkins.local  # Domain ที่เราต้องการใช้งาน

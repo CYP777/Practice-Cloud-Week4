@@ -4,12 +4,12 @@ metadata:
   name: grafana-volume
   labels:
     type: local
-    app: grafana
+    app: my-grafana
 spec:
   storageClassName: manual
   capacity:
-    storage: 20Gi
+    storage: 5Gi
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   hostPath:
-    path: /data/grafana
+    path: "/data/grafana"

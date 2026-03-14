@@ -4,7 +4,7 @@ metadata:
   name: jenkins-service
 spec:
   selector:
-    app: jenkins # ต้องตรงกับ label ใน Deployment
+    app: my-jenkins # ต้องตรงกับ label ใน Deployment
   ports:
     - protocol: TCP
       port: 8080         # Port ของ Service

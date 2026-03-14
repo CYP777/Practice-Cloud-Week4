@@ -16,4 +16,4 @@ spec:
           service:
             name: grafana-service # ชื่อ Service ที่เราสร้างไว้ข้างบน
             port:
-              number: 8000
+              number: 3000

@@ -3,11 +3,11 @@ kind: PersistentVolumeClaim
 metadata:
   name: jenkins-volume-claim
   labels:
-    app: jenkins
+    app: my-jenkins
 spec:
   storageClassName: manual
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   resources:
     requests:
       storage: 20Gi

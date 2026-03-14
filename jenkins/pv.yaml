@@ -4,12 +4,12 @@ metadata:
   name: jenkins-volume
   labels:
     type: local
-    app: jenkins
+    app: my-jenkins
 spec:
   storageClassName: manual
   capacity:
     storage: 20Gi
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   hostPath:
     path: /data/jenkins
